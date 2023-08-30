@@ -12,5 +12,6 @@
             echo "<p>" . date('Y-m-d H:i:s') . "</p>"; // Display current date and time
         ?>
     </div>
+            <a href="Projects.html"><h2>Back</h2></a>
 </body>
 </html>
