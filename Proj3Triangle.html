@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="main()">Input Length</button>
+
+<script>
+function determineTriangle(a,b,c) {
+    if (a === b && b === c) {
+        window.alert("The triangle is EQUILATERAL.");
+    } else if (a === b || b === c || a === c) {
+        window.alert("The triangle is ISOSCELES.");
+    } else {
+        window.alert("The triangle is SCALENE.");
+    }
+}
+function main() {
+    var a = prompt("Enter the length of side a:");
+    var b = prompt("Enter the length of side b:");
+    var c = prompt("Enter the length of side c:");
+
+    if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+        determineTriangle(parseFloat(a), parseFloat(b), parseFloat(c));
+    } else {
+        window.alert("Invalid input. Please enter valid numbers for the sides of the triangle.");
+    }
+}
+</script>
+<a href="Projects.html"><h2>Back</h2></a>
+</body>
+</html>

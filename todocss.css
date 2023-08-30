@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    zoom: 1;
+}
+
+.logo{
+    width: 15vh;
+    height: 15vh;
+}
+aside{
+    float: right;
+}
+nav{
+    max-height: 15vh;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 5vh;
+    color: #fff;
+    position: relative;
+}
+nav ul li a::before{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: red;
+    position: absolute;
+    right:0px;
+    bottom: -10px;
+    transition: 0.2s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    color: #fff;
+}
+.main{
+    background-color: #2e3c4b;
+    padding: 3rem 2rem 3rem 3rem ; 
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: lightgray;
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display:flex;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#input-task{
+    flex: 1 1 0%;
+    background-color:  #1c1a29;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: white;
+    width: 80%;
+    font-size: 18px;
+}
+#input-task-form{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#input-task::placeholder{
+    color: pink;
+    opacity: 50%;
+    font-size: 18px;
+}
+#submit-task{
+    color: rgb(168, 226, 255);
+    opacity: 50%;
+    margin: 0 20px;
+    font-size: large;
+}
+#submit-task:hover{
+    color: aquamarine;
+    opacity: 100%;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+    color: lightgray;
+    margin-bottom: 1rem;
+}
+#tasks{
+    display: flex;
+    background-color: #1c1a29;
+    border-radius: 1rem;
+}
+#text{
+    width: 70%;
+    color: #fff;
+}
+#checkbox{
+    color: #fff;
+    background-color: white ;
+    outline: white;
+    margin: 5px 10px 0 0;
+    height: 20px;
+    width: 20px;
+}
+#edit,#delete{
+    width: 10%;
+    position: relative
+    
+}
+#edit::before,#delete::before{
+    content: "";
+    width: 1px;
+    height: 80%;
+    background: gray;
+    position: absolute;
+    top:4px;
+    left:0px;
+}
+#edit{
+    color: rgb(168, 226, 255);
+    opacity: 50%;
+}
+#edit:hover{
+    color: aquamarine;
+    opacity: 100%;
+}
+#delete{
+    color: rgb(200, 126, 126);
+    opacity: 50%;
+}
+#delete:hover{
+    color: rgb(230,50,50);
+    opacity: 100%;
+}
+#edit,#delete,#text{
+    padding: 1rem;
+    font-size: large;
+}
