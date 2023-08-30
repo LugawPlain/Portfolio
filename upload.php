@@ -16,6 +16,6 @@ $uploadedImages = scandir($uploadDir);
 $uploadedImages = array_diff($uploadedImages, array('.', '..'));
 
 foreach ($uploadedImages as $image) {
-    echo "<img src='$uploadDirectory$image' alt='Uploaded Image' width='200'>";
+    echo "<img src='$uploadDir$image' alt='Uploaded Image' width='200'>";
 }
 ?>
