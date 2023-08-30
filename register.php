@@ -48,5 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php elseif (isset($success)) : ?>
         <h2><?php echo $success; ?></h2>
     <?php endif; ?>
+        <a href="Projects.html"><h2>Back</h2></a>
 </body>
 </html>
